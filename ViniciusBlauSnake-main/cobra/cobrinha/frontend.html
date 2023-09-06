@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Snake Game</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+
+    <h1>Pontuações:</h1>
+
+    <!-- https://wisdmlabs.com/blog/responsive-tables-using-css-div-tag/ -->
+
+    <style>
+        #resp-table {
+            width: 100%;
+            display: table;
+        }
+
+        #resp-table-header {
+            display: table-header-group;
+            background-color: cyan;
+            font-weight: bold;
+            font-size: 35px;
+            text-align: center;
+        
+        }
+
+        .table-header-cell {
+            display: table-cell;
+            padding: 10px;
+            text-align: justify;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #resp-table-body {
+            display: table-row-group;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .resp-table-row {
+            display: table-row;
+        }
+
+        .table-body-cell {
+            display: table-cell;
+            border: 1px solid cyan;
+            padding: 10px;
+        }
+    </style>
+    <br>
+    <br>
+    <div id="resp-table">
+        <div id="resp-table-header">
+            <div class="table-header-cell">id</div>
+            <div class="table-header-cell">pontos</div>
+        </div>
+        <div id="resp-table-body">
+
+            <!--
+            <div class="resp-table-row">
+                <div class="table-body-cell">
+                    Cell 1–1
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <!-- inclusão da biblioteca jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script src="java.js"></script>
+
+    <script>
+        // proteção para não executar o javascript antes do documento estar pronto
+        $(function () {
+
+            // chamadas à função genérica
+            listagem_generica();
+
+        });
+    </script>
+</body>
+
+</html>
